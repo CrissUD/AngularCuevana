@@ -1,0 +1,251 @@
+/* ------------------------------ REGLAS GENERALES NAV ------------------------------ */
+.nav-bar, .logo-div, .search, .menu, .menu li, .menu-li,.menu-btn, .user-option{
+    display: flex;
+    align-items: center;
+}
+.nav-bar{
+    max-width: 1220px;
+    height: 120px;
+    margin: auto;
+    font-size: 17px;
+    position: relative;
+    justify-content: space-between;
+    z-index: 1;
+}
+a{
+    color: #fff;
+}
+.logo-div, .grid-nav, .user-option a{
+    transition: all .3s ease-in;
+}
+/* ------------------------------ REGLAS CONTENEDORES GENERALES NAV ------------------------------ */
+.logo-div{
+    cursor: pointer;
+    z-index: 10;
+}
+.grid-nav{
+    z-index: 3;
+    display: grid;
+    grid-template-areas: "menu search userOptions";
+    align-items: center;
+}
+#grid-nav.activate{
+    left: 0px;
+}
+.logo-div{
+    height: inherit;
+}
+/* ------------------------------ REGLAS LOGO-DIV ------------------------------ */
+.logo-div img{
+    width: 110%;
+}
+/* ------------------------------ REGLAS MENU-BTN ------------------------------ */
+.menu-btn{
+    padding: 10px;
+    background: #0079FC;
+    border-radius: 100%;
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+}
+.menu-btn figure{
+    height: 30px;
+}
+.menu-btn img{
+    width: 30px;
+}
+/* ------------------------------ REGLAS NAV-OPTION ------------------------------ */
+.nav-option{
+    grid-area: menu;
+    margin-right: 50px;
+}
+.active{
+    font-weight: bold;
+}
+.menu a{
+    margin-left: 40px;
+}
+.menu figure{
+    height: 20px;
+}
+li a:hover{
+    color: #0079FC;
+}
+.nav-option img, .search img{
+    width: 20px;
+    cursor: pointer;
+}
+.sub-menu{
+    position: absolute;
+    display: none;
+    margin-top: 250px;
+    margin-left: 20px;
+    background:#1E2747;
+    border-radius: 12px;
+    font-size: 16px;
+}
+.sub-menu::before{
+    position: relative;
+    left: 40px;
+    top: -10px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    transform: rotate(45deg);
+    background: #1E2747;    
+    z-index: -1;
+}
+.sub-menu ul{
+    padding: 0;
+}
+.sub-menu li{
+    margin: 5px 10px;
+    padding: 10px 15px;
+    padding-right: 60px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.sub-menu li:hover{
+    background:#0f162c;
+}
+.sub-menu a{
+    margin-left: 0px;
+}
+.sub-menu-2{
+    margin-top: 130px;
+}
+.genders:hover .sub-menu-1{
+    display: flex;
+    justify-content: center;
+}
+.movies:hover .sub-menu-2{
+    display: flex;
+    justify-content: center;
+}
+/* ------------------------------ REGLAS SEARCH ------------------------------ */
+.search{
+    grid-area: search;
+    justify-content: flex-end;
+}
+.search input, .search span{
+    background: rgba(8, 15, 40, .5);
+    border: 1px solid #007afc56;
+}
+.search input{
+    height: 45px;
+    padding-left: 10px;
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+    width: 65%;
+    font-size: 17px;
+    color: #8DA0BC;
+}
+.search input:focus{
+    outline: none;
+}
+::placeholder { 
+    color: #8DA0BC;
+    opacity: 1;
+}
+.search span{
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    padding: 10px;
+    margin-right: 5px;
+}
+/* ------------------------------ REGLAS USER-OPTIONS ------------------------------ */
+.user-option{
+    grid-area: userOptions;
+}
+.user-option a{
+    margin: auto 5px;
+    text-align: center;
+    padding: 10px 18px;
+    border-radius: 30px;
+}
+.user-option a:nth-of-type(2){
+    background: #0079FC;
+}
+.user-option a:hover{
+    display: inline-block;
+    transform: scale(1.1, 1.1);
+}
+/* ------------------------------ REGLAS RESPONSIVE ------------------------------ */
+
+@media(max-width:900px){
+    #logo-div.activate{
+        width: 320px;
+        background: #0f162c;
+    }
+    .logo-div img{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .menu-btn{
+        display: block;
+        margin: 15px;
+    }
+    .grid-nav{
+        grid-template-areas: "search" "userOptions" "menu";
+        grid-template-columns: 100%;
+        gap: 20px 0;
+        justify-items: center;
+        position: fixed;
+        overflow-y: auto;
+        overflow-x: hidden;
+        left: -100%; 
+        top: 0px;
+        width: 320px;  
+        height: 100vh;
+        background-color: #0f162c;
+        padding-top: 140px;
+    }
+    .user-option, .search, .nav-option{
+        width: 100%;
+        justify-content: center;
+    }
+    .user-option a{
+        width: 30%;
+    }
+    .user-option a:nth-of-type(1){
+        background: #181F35;
+    }
+    .nav-option{
+        margin: 0;
+        margin-bottom: 120px;
+    }
+    .menu, .menu li{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .home, .series, .menu-li{
+        width: 100%;
+        height: 50px;
+        border-bottom: 1px solid #8da0bc2c;
+        padding: 10px 0;
+    }
+    .sub-menu{
+        display: flex;
+        justify-content: center;
+        position: initial;
+        background:transparent;
+        margin: 0;
+        margin-left: 20px;
+    }
+    .sub-menu li{
+        padding-right: 0;
+        margin: 0 10px;
+    }
+    .sub-menu a{
+        color: #8DA0BC;
+    }
+    .sub-menu::before{
+        display: none;
+    }
+}
+@media(min-width:901px){
+    .grid-nav, .nav-option, .menu, .menu li{
+        height: inherit;
+    }
+}

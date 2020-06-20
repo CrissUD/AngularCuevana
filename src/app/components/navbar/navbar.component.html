@@ -1,0 +1,69 @@
+<nav class="nav-bar">
+  <div id="logo-div" class="logo-div" #logoDiv>
+    <figure>
+      <img src="https://cuevana3.io/wp-content/themes/cuevana3/public/img/cnt/cuevana3.png" alt="logo-page">
+    </figure>
+  </div>
+  <div class="menu-btn">
+    <a (click)="moveMenu($event, gridMenu, logoDiv)">
+      <figure><img src="../../../assets/resources/images/menu.png" alt="menu"></figure>
+    </a>
+  </div>
+  <div id="grid-nav" class="grid-nav" #gridMenu>
+    <div class="nav-option">
+      <ul class="menu">
+        <li class="home"><a class="active" href="#">Inicio</a></li>
+        <li class="genders">
+          <div class="menu-li">
+            <a href="#">Géneros</a>
+            <span>
+              <figure><img src="../../../assets/resources/images/down.png" alt="down"></figure>
+            </span>
+          </div>
+          <div class="sub-menu sub-menu-1">
+            <div class="sub-menu-left">
+              <ul>
+                <ng-container *ngFor="let gender of genders; let i= index">
+                  <li *ngIf="i<9"><a href="#">{{gender.gender}}</a></li>
+                </ng-container>
+              </ul>
+            </div>
+            <div class="sub-menu-right">
+              <ul>
+                <ng-container *ngFor="let gender of genders; let i= index">
+                  <li *ngIf="i>=9"><a href="#">{{gender.gender}}</a></li>
+                </ng-container>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="movies">
+          <div class="menu-li">
+            <a href="#">Películas</a>
+            <span>
+              <figure><img src="../../../assets/resources/images/down.png" alt="down"></figure>
+            </span>
+          </div>
+          <div class="sub-menu sub-menu-2">
+            <ul>
+              <ng-container *ngFor="let movie of movies; let i= index">
+                <li><a href="#">{{movie.movie}}</a></li>
+              </ng-container>
+            </ul>
+          </div>
+        </li>
+        <li class="series"><a href="#">Series</a></li>
+      </ul>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Buscar Películas">
+      <span>
+        <figure><img src="../../../assets/resources/images/search.png" alt="search"></figure>
+      </span>
+    </div>
+    <div class="user-option">
+      <a href="#">Entrar</a>
+      <a href="#">Registro</a>
+    </div>
+  </div>
+</nav>

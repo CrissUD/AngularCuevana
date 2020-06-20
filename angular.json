@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "cuevana-app"
+    }
+  },
+  "defaultProject": "cuevana-app",
+  "cli": {
+    "analytics": "bd8d966f-6c2a-4a1f-b556-4e4561d99a48"
+  }
 }

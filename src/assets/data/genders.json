@@ -1,0 +1,19 @@
+[
+    {"gender" : "Acción"},
+    {"gender" : "Aventura"},
+    {"gender" : "Biografía"},
+    {"gender" : "Comedia"},
+    {"gender" : "Documentales"},
+    {"gender" : "Familiar"},
+    {"gender" : "Misterio"},
+    {"gender" : "Romance"},
+    {"gender" : "Thriller"},
+    {"gender" : "Animación"},
+    {"gender" : "Bélico Guerra"},
+    {"gender" : "Ciencia Ficción"},
+    {"gender" : "Crimen"},
+    {"gender" : "Drama"},
+    {"gender" : "Fantasia"},
+    {"gender" : "Musical"},
+    {"gender" : "Terror"}
+]
