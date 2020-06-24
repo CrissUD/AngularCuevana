@@ -10,7 +10,7 @@
     font-size: 17px;
     position: relative;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 19;
 }
 a{
     color: #fff;
@@ -31,6 +31,14 @@ a{
 }
 #grid-nav.activate{
     left: 0px;
+}
+.grid-nav::-webkit-scrollbar{
+    width: 8px;
+    height: 8px;
+}
+.grid-nav::-webkit-scrollbar-thumb {
+    background: #007AFE;
+    border-radius: 8px;
 }
 .logo-div{
     height: inherit;

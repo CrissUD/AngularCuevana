@@ -1,0 +1,26 @@
+<div class="episodes">
+    <div class="episodes-preview">
+        <div class="episodes-title">
+            <h1>Episodios</h1>
+            <a class="see-more" href="#">Ver Mas Series</a>
+        </div>
+        <div class="episodes-list">
+            <div class="episode-card" *ngFor="let episode of episodes">
+                <div class="episode-card-img">
+                    <figure><img [src]="episode.image" alt="episode"></figure>
+                    <a class="num-episode" href="#">{{episode.numEpisode}}</a>
+                    <div class="episode-card-image-cover">
+                        <figure><img src="../../../assets/resources/images/play2.png" alt="play-cover"></figure>
+                    </div>
+                </div>
+                <div class="episode-card-info">
+                    <p class="info-title">{{episode.title}} {{episode.numEpisode}}</p>
+                    <p class="info-date">{{episode.date}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="serie-cover">
+        <figure><img src="https://1.bp.blogspot.com/-Ln11WrqkNYM/UEe2N4xROQI/AAAAAAAAEUg/9qiqhe1wFrU/s1600/Breaking-Bad-Walter-White-HD-Wallpaper--Vvallpaper.Net.jpg" alt="serie-cover"></figure>
+    </div>
+</div>

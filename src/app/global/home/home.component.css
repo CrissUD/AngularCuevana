@@ -1,0 +1,18 @@
+.hero{
+    position: relative;
+    height: 648px;
+}
+.container{
+    width: 100vw;
+    background: #080F28;
+}
+.main-section{
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.trends{
+    margin: 0 auto;
+}

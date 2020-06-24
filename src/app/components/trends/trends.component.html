@@ -1,0 +1,38 @@
+<div class="trends">
+    <div class="languages">
+        <div class="title">
+            <h5>Filtrar películas por idiomas</h5>
+        </div>
+        <div class="links-languages">
+            <a href="#">
+                <figure><img src="../../../assets/resources/images/mexico.png" alt="flag"></figure>
+            </a>
+            <a href="#">
+                <figure><img src="../../../assets/resources/images/españa.png" alt="flag"></figure>
+            </a>
+            <a href="#">
+                <figure><img src="../../../assets/resources/images/estados-unidos.png" alt="flag"></figure>
+            </a>
+        </div>
+    </div>
+    <div class="movies-lists">
+        <div class="premiere">
+            <div class="title">
+                <h5>Top Estrenos</h5>
+            </div>
+            <app-movie-list [movieList]="moviesPremier"></app-movie-list>
+        </div>
+        <div class="outstanding">
+            <div class="title">
+                <h5>Películas destacadas</h5>
+            </div>
+            <app-movie-list [movieList]="moviesOutstanding"></app-movie-list>
+        </div>
+        <div class="series">
+            <div class="title">
+                <h5>Series</h5>
+            </div>
+            <app-movie-list [movieList]="series"></app-movie-list>
+        </div>
+    </div>
+</div>

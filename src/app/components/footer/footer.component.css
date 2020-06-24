@@ -1,0 +1,63 @@
+/* ------------------------------ REGLAS GENERALES FOOTER ------------------------------ */
+footer{
+    max-width: 1300px;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 40px;
+}
+.footer-up, .footer-links ul, .footer-left, .social-net{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer-links, .footer-logo{
+    margin: 20px auto;
+}
+/* ------------------------------ REGLAS FOOTER UP ------------------------------ */
+.footer-up{
+    justify-content: space-between;
+}
+.footer-logo figure, .footer-logo img{
+    width: 97%;
+    margin-right: 20px;
+}
+.footer-links ul{
+    justify-content: center;
+}
+.footer-links ul li{
+    margin: 10px auto;
+}
+.footer-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 17px;
+}
+.footer-links ul li a:hover{
+    color: #007AFE;
+}
+.social-net{
+    margin-right: 30px;
+}
+.social-net a{
+    margin: 0 20px;
+}
+.social-net figure, .social-net img{
+    width: 40px;
+}
+.social-net img:hover{
+    filter: brightness(500%);
+}
+/* ------------------------------ REGLAS FOOTER DOWN ------------------------------ */
+.footer-down{
+    text-align: center;
+    color: #4F6B95;
+    padding: 20px;
+    font-size: 14px;
+}
+/* ------------------------------ REGLAS RESPONSIVE ------------------------------ */
+@media(max-width: 768px){
+    .social-net{
+        margin: auto;
+    }
+}

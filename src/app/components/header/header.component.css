@@ -4,17 +4,24 @@ header{
     min-height: 648px;
     position: absolute;
     top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     overflow: hidden;
     font-size: 16px;
+}
+.header-container{
+    width: 500vw;
+    min-height: inherit;
+    display: flex;
+    position: absolute;
+    transition: all 0.5s ease-in;
+    transform: translateX(200vw);
 }
 .header-content{
     position: relative;
     width: 100vw;
     min-height: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    background-image: url('https://cdn.atomix.vg/wp-content/uploads/2020/01/sonic.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,7 +37,7 @@ header{
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(8, 15, 40, .5), #080F28);
+    background: linear-gradient(to bottom, rgba(8, 15, 40, .4), #080F28);
     justify-content: center;
 }
 .cover-container{
@@ -87,7 +94,7 @@ header{
     padding: 2px 30px;
     font-size: 1.2em;
 }
-.show-movie button:hover, .div-title:hover{
+.show-movie button:hover, .div-title h1:hover, .div-title a:hover{
     display: flex;
     transform: scale(1.01, 1.01);
 }
@@ -105,6 +112,7 @@ header{
     cursor: pointer;
     background-color: #4F6B95;
     outline: none;
+    transition: all 0.5s ease-in;
 }
 .carousel-buttons button.activate{
     background: #007AFF;

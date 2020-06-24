@@ -7,6 +7,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './global/home/home.component';
 import { AboutUsComponent } from './global/about-us/about-us.component';
+import { EpisodesComponent } from './components/episodes/episodes.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { TrendsComponent } from './components/trends/trends.component';
+import { MovieListComponent } from './components/movie-list/movie-list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +19,12 @@ import { AboutUsComponent } from './global/about-us/about-us.component';
     HeaderComponent,
     NavbarComponent,
     HomeComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    EpisodesComponent,
+    DashboardComponent,
+    FooterComponent,
+    TrendsComponent,
+    MovieListComponent
   ],
   imports: [
     BrowserModule,

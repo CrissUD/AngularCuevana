@@ -1,0 +1,26 @@
+[
+    {
+        "image": "https://images-na.ssl-images-amazon.com/images/I/81zZNJrmgTL._AC_SY741_.jpg",
+        "year": "2020",
+        "title": "Bad Boys for Life",
+        "punctuation": "3,4",
+        "duration": "2h 4m",
+        "quality": "4K"
+    },
+    {
+        "image": "https://i.pinimg.com/originals/a1/18/10/a118108101e3a7450936947a4d3ae243.png",
+        "year": "2020",
+        "title": "Mujer Maravilla 1984",
+        "punctuation": "-",
+        "duration": "1h 58m",
+        "quality": "4K"
+    },
+    {
+        "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/da-5-bloods-netflix-poster-spike-lee-1590438580.jpeg?resize=480:*",
+        "year": "2020",
+        "title": "Da 5 Bloods",
+        "punctuation": "3,4",
+        "duration": "2h 34m",
+        "quality": "HD"
+    }
+]

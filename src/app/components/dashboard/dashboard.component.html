@@ -1,0 +1,53 @@
+<div class="dashboard">
+    <div class="dashborard-header">
+        <h1>Películas Online</h1>
+        <a class="activate" href="#">Últimas</a>
+        <a href="#">Estrenos</a>
+        <a href="#">Ranking</a>
+        <a href="#">Mas Vistas</a>
+    </div>
+    <div class="dahs-movies">
+        <div class="movie-card" *ngFor="let movie of moviesDashboard; let i = index">
+            <div class="movie-container">
+                <figure class="movie-img-container"><img class="movie-img" [src]="movie.image" alt="movie"></figure>
+                <a class="year" href="#">{{movie.year}}</a>
+                <div class="movie-cover">
+                    <figure><img src="../../../assets/resources/images/play2.png" alt=""></figure>
+                </div>
+            </div>
+            <div class="movie-target">
+                <div class="target-container">
+                    <div class="target-background" [style.backgroundImage]="'url('+movie.image+')'"></div>
+                    <div class="movie-info">
+                        <h4>{{movie.title}}</h4>
+                        <div class="info-details">
+                            <span class="cy middle">{{movie.punctuation}}</span>
+                            <span class="cy">/5</span>
+                            <span class="cw">{{movie.duration}}</span>
+                            <span class="cw">{{movie.year}}</span>
+                            <a href="#">{{movie.quality}}</a>
+                        </div>
+                        <div class="description">
+                            <p>{{movie.description}}</p>
+                        </div>
+                        <div class="director">
+                            <span class="sw">Director:</span>
+                            <span class="cw">{{movie.director}}</span>
+                        </div>
+                        <div class="gender">
+                            <span class="sw">Genero:</span>
+                            <span class="cw">{{movie.gender}}</span>
+                        </div>
+                        <div class="actors">
+                            <span class="sw">Acores:</span>
+                            <span class="cw">{{movie.actors}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movie-name">
+                <a href="#">{{movie.title}}</a>
+            </div>
+        </div>
+    </div>
+</div>

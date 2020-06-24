@@ -1,0 +1,26 @@
+[
+    {
+        "image": "https://images-na.ssl-images-amazon.com/images/I/81akueB8XVL._AC_SY879_.jpg",
+        "year": "2019",
+        "title": "Stranger Things 3",
+        "punctuation": "4,4",
+        "duration": "33 episodios",
+        "quality": "HD"
+    },
+    {
+        "image": "https://es.web.img3.acsta.net/pictures/19/04/29/08/21/1692162.jpg?coixp=45&coiyp=73",
+        "year": "2018",
+        "title": "Chernobyl",
+        "punctuation": "4,7",
+        "duration": "5 episodios",
+        "quality": "HD"
+    },
+    {
+        "image": "https://vignette.wikia.nocookie.net/doblaje/images/7/7a/The_Beatles_Anthology_TV-233904535-large.jpg/revision/latest/top-crop/width/360/height/450?cb=20100404001617&path-prefix=es",
+        "year": "1996",
+        "title": "The Beatles: Antología",
+        "punctuation": "4,55",
+        "duration": "8 Episodios",
+        "quality": "DVD"
+    }
+]

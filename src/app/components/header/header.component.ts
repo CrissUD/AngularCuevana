@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { movie } from 'src/app/models/movie';
+import { CarouselService } from 'src/app/services/carousel.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  moviesCarousel: movie[];
+  estadoAnterior: number = 0;
+
+  constructor(private carouseService: CarouselService) { }
 
   ngOnInit(): void {
+    this.carouseService.getMoviesCarousel().subscribe(data =>{
+      this.moviesCarousel = data;
+      console.log(this.moviesCarousel)
+    })
   }
 
+  moveCarousel(event, i, carousel){
+    carousel.style.transform = "translateX(calc(200vw - "+i * 100+"vw))";
+    document.getElementById(i).classList.toggle('activate');
+    document.getElementById(this.estadoAnterior+"").classList.toggle('activate');
+    this.estadoAnterior = i;
+  }
 }

@@ -1,0 +1,79 @@
+/* ------------------------------ REGLAS GENERALES TRENDS ------------------------------ */
+.trends{
+    max-width: 400px;
+    margin: auto;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    font-size: 16px;
+}
+.title{
+    margin: 1.3em auto;
+    text-align: center;
+    padding: 1.3em;
+    text-transform: uppercase;
+    background: #141A32;
+    color: #4F6B95;
+    font-size: 1.1em;
+    width: 22em;
+    box-sizing: border-box;
+}
+/* ------------------------------ REGLAS LANGUAGES ------------------------------ */
+.links-languages{
+    display: flex;
+    justify-content: center;
+}
+.links-languages a{
+    overflow: hidden;
+    border-radius: 6px;
+    width: 45px;
+    height: 35px;
+    margin: 10px;
+    transition: all .2s ease-in;
+}
+.links-languages a:hover{
+    display: inline-block;
+    transform: scale(1.07);
+}
+.links-languages figure, .links-languages img{
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width: 1024px){
+    .trends{
+        padding-left: 0px;
+        max-width: 1024px;
+    }
+    .movies-lists{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .movies-lists div{
+        margin: 20px;
+    }
+
+}
+
+@media(max-width: 768px){
+    
+}
+
+@media(max-width: 480px){
+    .trends{
+        font-size: 12px;
+    }
+    .title{
+        margin: 20px auto;
+    }
+}
+@media(max-width: 380px){
+    .trends{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 320px){
+
+}

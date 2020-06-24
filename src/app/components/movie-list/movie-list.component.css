@@ -1,0 +1,71 @@
+/* ------------------------------ REGLAS GENERALES MOVIE-LIST ------------------------------ */
+.movie-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ------------------------------ REGLAS MOVIE-CARD-PREVIEW ------------------------------ */
+.movie-card-preview{
+    display: flex;
+    margin: 20px auto;
+}
+/* ------------------------------ REGLAS MOVIE-CARD-IMAGE ------------------------------ */
+.movie-card-image{
+    width: 100px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-right: 20px;
+    cursor: pointer;
+    position: relative;
+}
+.movie-card-image figure, .movie-card-image img, .cover{
+    width: 100%;
+    height: 100%;
+}
+.cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .7);
+    transition: all .3s ease-in;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cover figure, .cover img{
+    width: 50px;
+    height: 50px;
+}
+.movie-card-image:hover .cover{
+    opacity: 1;
+}
+/* ------------------------------ REGLAS MOVIE-DETAILS ------------------------------ */
+.title a{
+    color: #fff;
+}
+.title a:hover{
+    color: #007AFE;
+}
+.info-details{
+    margin: 20px auto;
+}
+.middle{
+    font-size: 1.2em;
+}
+.cy{
+    color: #ECB709;
+}
+.cw{
+    color: #8DA0BC;
+    margin-left: 10px;
+}
+.info-details a{
+    background: #ECB709;
+    color: #111;
+    padding: 3px 10px;
+    margin: 15px;
+    border-radius: 16px;
+    font-size: 1em;
+}
