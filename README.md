@@ -23,5 +23,5 @@ A continuación se muestra el resultado de la replica del HomePage de Cuevana3, 
 
 <div align='center'>
     <img  src='https://i.imgur.com/qKW6ij2.png'>
-    <p>Resultado Pagina que replica el HomePage de Cuevana3</p>
+    <p>Resultado Pagina que replica el HomePage de Cuevana3.io</p>
 </div>
