@@ -1,0 +1,52 @@
+[
+    {
+        "title": "Sonic. La película",
+        "kind": "Película",
+        "punctuation": "4,5",
+        "duration": "1h 39m",
+        "year": "2020",
+        "quality": "HD",
+        "description": "Sonic, el famoso erizo azul de SEGA vivirá su primera aventura en la pantalla grande. En esta adaptación cinematográfica basada en la conocida saga de videojuegos podremos ver a los personajes icónicos de la franquicia.",
+        "image": "https://cdn.atomix.vg/wp-content/uploads/2020/01/sonic.jpg"
+    },
+    {
+        "title": "Onward",
+        "kind": "Película",
+        "punctuation": "4,04",
+        "duration": "1h 43m",
+        "year": "2020",
+        "quality": "Web-5",
+        "description": "Ambientado en un mundo de fantasía suburbana, dos hermanos elfos adolescentes, Ian y Barley Lightfood, se embarcan en una aventura en la que se proponen descubrir si existe aún algo de magia en el mundo.",
+        "image": "https://image.tmdb.org/t/p/w1280/bcT8CaBIj086WVD7K529h78eujb.jpg"
+    },
+    {
+        "title": "Star Wars: El Ascenso de Skywalker",
+        "kind": "Película",
+        "punctuation": "3,9",
+        "duration": "2h 21m",
+        "year": "2020",
+        "quality": "HD",
+        "description": "La próxima entrega de la franquicia y la conclusión de la secuela de la trilogía “Star Wars”, así como la “Saga Skywalker”.",
+        "image": "https://image.tmdb.org/t/p/w1280/jOzrELAzFxtMx2I4uDGHOotdfsS.jpg"
+    },
+    {
+        "title": "Harley Quinn: Aves de presa",
+        "kind": "Película",
+        "punctuation": "4,23",
+        "duration": "1h 49m",
+        "year": "2020",
+        "quality": "4k",
+        "description": "Después de separarse de Joker, Harley Quinn y otras tres heroínas (Canario Negro, Cazadora y Renée Montoya) unen sus fuerzas para salvar a una niña (Cassandra Cain) del malvado rey del crimen Máscara Negra.",
+        "image": "http://www.revistabrooke.com/wp-content/uploads/2020/02/aves-de-presa-portada-peli-2020.jpg"
+    },
+    {
+        "title": "Stranger Things",
+        "kind": "Serie",
+        "punctuation": "4,8",
+        "duration": "8h 47m",
+        "year": "2019",
+        "quality": "HD",
+        "description": "Después de la misteriosa desaparición de un niño, la gente de un pequeño pueblo comienza a descubrir secretos de un laboratorio del gobierno, portales a otro mundo, monstruos siniestros y una niña extraña.",
+        "image": "https://s1.eestatic.com/2019/01/01/cultura/series/Stranger_Things-Netflix-Series_365225889_111380063_1706x960.jpg"
+    }
+]
