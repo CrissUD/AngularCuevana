@@ -1,0 +1,48 @@
+<div class="login">
+    <div class="login-form">
+        <div class="encabezado">
+            <figure class="icon-container">
+                <img class="icon" src="https://i.imgur.com/bOtLjh2.png" alt="log">
+            </figure>
+            <h2>Iniciar Sesión</h2>
+            <button (click)="enviarEstado()">
+                <img src="https://i.imgur.com/s46ggRU.png" alt="cerrar">
+            </button>
+        </div>
+        <form autocomplete="off" (ngSubmit)="guardar()" [formGroup]="form">
+            <div class="inputs">
+                <input
+                    class="text-in"
+                    type="text" 
+                    placeholder="NombreUsuario"
+                    name="usuario"
+                    formControlName="usuario"
+                    [class.is-invalid]="validacionUsuario"
+                >
+                <span *ngIf="validacionUsuario">Escriba el Nombre de Usuario</span>
+                <input 
+                    class="text-in"
+                    type="password" 
+                    placeholder="ContraseñaUsuario"
+                    name="clave"
+                    formControlName="clave"
+                    [class.is-invalid]="validacionClave"
+                >
+                <span *ngIf="validacionClave">La contraseña debe tener mínimo 8 caracteres</span>
+                <div class="check">
+                    <label>
+                        <input class="check-in" type="checkbox" name="check">
+                        Recordarme
+                    </label>
+                </div>
+                <div class="button">
+                    <button class="button-in" type="submit">Iniciar Sesión</button>
+                </div>
+                <a href="#">Recuperar Contraseña</a>
+            </div>
+            <div class="pie-form">
+                <a href="#">¿Perdiste tu Contraseña?</a>
+            </div>
+        </form>
+    </div>
+</div>

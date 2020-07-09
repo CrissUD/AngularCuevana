@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuService } from 'src/app/services/menu.service';
+import { ReduxService } from 'src/app/services/redux.service';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-navbar',
@@ -10,7 +12,10 @@ export class NavbarComponent implements OnInit {
 
   genders: any;
   movies: any;
-  constructor(private menuService: MenuService) { }
+  estadoLoging = false;
+  estadoSignUp= false;
+
+  constructor(private menuService: MenuService, private reduxService: ReduxService) { }
 
   ngOnInit(): void {
     this.menuService.getGenders().subscribe(data =>{
@@ -24,5 +29,13 @@ export class NavbarComponent implements OnInit {
   moveMenu(event, gridMenu, logoDiv){
     gridMenu.classList.toggle('activate');
     logoDiv.classList.toggle('activate');
+  }
+
+  changeEstadoLogin(boolean){
+    this.estadoLoging = boolean;
+  }
+
+  changeEstadoSignUp(boolean){
+    this.estadoSignUp = boolean;
   }
 }

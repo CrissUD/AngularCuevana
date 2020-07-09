@@ -62,8 +62,11 @@
       </span>
     </div>
     <div class="user-option">
-      <a href="#">Entrar</a>
-      <a href="#">Registro</a>
+      <a (click)="estadoLoging = ! estadoLoging">Entrar</a>
+      <a (click)="estadoSignUp = ! estadoSignUp">Registro</a>
     </div>
   </div>
 </nav>
+
+<app-login *ngIf="estadoLoging" (estado)="changeEstadoLogin($event)"></app-login>
+<app-signup *ngIf="estadoSignUp" (estado)="changeEstadoSignUp($event)"></app-signup>

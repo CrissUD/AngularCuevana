@@ -170,6 +170,7 @@ li a:hover{
     text-align: center;
     padding: 10px 18px;
     border-radius: 30px;
+    cursor: pointer;
 }
 .user-option a:nth-of-type(2){
     background: #0079FC;

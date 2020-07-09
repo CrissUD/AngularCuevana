@@ -1,0 +1,144 @@
+.login{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in;
+}
+.login-form{
+    display: block;
+    background: #fff;
+    width: 500px;
+    height: 80%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.encabezado{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em;
+    border-bottom: solid 1px #eee;
+}
+h2{
+    color: #444;
+}
+.icon-container{
+    border-radius: 100%;
+    background: #E5F1FF;
+    padding: 10px;
+}
+.icon{
+    width: 40px;
+    height: 40px;
+}
+.encabezado button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.encabezado button img{
+    width: 30px;
+}
+form, .inputs{
+    display: flex;
+    flex-wrap: wrap;
+}
+.inputs{
+    width: 100%;
+    padding: 30px;
+    border-bottom: solid 1px #eee;
+}
+.text-in{
+    margin: 7px auto;
+    width: 100%;
+    height: 50px;
+    padding-left: 30px;
+    border: 1px solid #eee;
+    border-radius: 30px;
+    background: #F9FAFC;
+    color: #8DA0BC;
+    outline: none;
+    letter-spacing: 1px;
+}
+.text-in:focus{
+    background: #fff;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #8DA0BC;
+    opacity: 1; /* Firefox */
+}
+.text-in.is-invalid{
+    border: 1px solid rgb(223, 49, 49);
+}
+span{
+    color: #555;
+    width: 100%;
+    font-size: 12px;
+    margin-left: 20px;
+}
+.check{
+    margin: 30px auto;
+}
+.check label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #8DA0BC;
+}
+.check label:hover{
+    color: #007AFE;
+}
+.check-in{
+    background: #F9FAFC;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+.button{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.button-in{
+    display: block;
+    width: 100%;
+    background: #007AFE;
+    color: #fff;
+    height: 55px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.15em;
+    transition: all 0.3s ease-in;
+    outline: none;
+}
+.button-in:hover{
+    transform: scale(1.05);
+}
+a{
+    color: #555;
+}
+a:hover{
+    color: #007AFE;
+}
+.pie-form{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width:480px){
+    .login-form{
+        width: 320px;
+    }
+}
