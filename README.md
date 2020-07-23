@@ -16,6 +16,11 @@ Alguna de las características usadas para la construcción de esta página Web 
 * Uso de **Referencias de elementos HTML** para manipulación del DOM a traves de TypeScript.
 * Comunicación entre componentes con uso de **Inputs**.
 
+## Actualizaciones 
+
+* Se añaden componentes **Login** y **Signup** para gestión de formularios con Angular a traves de **formularios Reactivos**. 
+* Se realiza conexión con **Firebase** para obtención de información externa y se reemplaza la simulación de información externa de los archivos .Json por la base de datos no relacional proporcionada por **Firebase**.
+* Peticiones HTTP hacia **Firebase**.
 
 # Resultado
 
