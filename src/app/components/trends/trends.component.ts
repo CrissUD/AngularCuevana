@@ -17,13 +17,13 @@ export class TrendsComponent implements OnInit {
 
   ngOnInit(): void {
     this.trendsService.getMoviesPremier().subscribe(data =>{
-      this.moviesPremier = data;
+      this.moviesPremier = Object.values(data);
     })
     this.trendsService.getMoviesOutstanding().subscribe(data =>{
-      this.moviesOutstanding = data;
+      this.moviesOutstanding = Object.values(data);
     })
     this.trendsService.getSeries().subscribe(data =>{
-      this.series = data;
+      this.series = Object.values(data);
     })
   }
 

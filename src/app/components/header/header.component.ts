@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.carouseService.getMoviesCarousel().subscribe(data =>{
-      this.moviesCarousel = data;
+        this.moviesCarousel = Object.values(data);
     })
   }
 

@@ -8,9 +8,12 @@ import { movie } from '../models/movie';
 })
 export class DashboardService {
 
+  urlRoot: string = 'https://cuevanaclon.firebaseio.com/'; 
+
   constructor(private http: HttpClient) { }
 
   getMoviesDashboard():Observable<movie[]>{
-    return this.http.get<movie[]>("assets/data/moviesDash.json");
+    // return this.http.get<movie[]>("assets/data/moviesDash.json");
+    return this.http.get<movie[]>(`${this.urlRoot}moviesDash.json`);
   }
 }

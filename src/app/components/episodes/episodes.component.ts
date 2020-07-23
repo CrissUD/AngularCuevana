@@ -12,7 +12,7 @@ export class EpisodesComponent implements OnInit {
 
   ngOnInit(): void {
     this.episodesService.getEpisodes().subscribe(data =>{
-      this.episodes = data;
+      this.episodes = Object.values(data);
     });
   }
 

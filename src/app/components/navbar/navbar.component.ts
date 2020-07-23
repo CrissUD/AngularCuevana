@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuService } from 'src/app/services/menu.service';
-import { ReduxService } from 'src/app/services/redux.service';
 import { BehaviorSubject } from 'rxjs';
 
 @Component({
@@ -15,7 +14,7 @@ export class NavbarComponent implements OnInit {
   estadoLoging = false;
   estadoSignUp= false;
 
-  constructor(private menuService: MenuService, private reduxService: ReduxService) { }
+  constructor(private menuService: MenuService) { }
 
   ngOnInit(): void {
     this.menuService.getGenders().subscribe(data =>{

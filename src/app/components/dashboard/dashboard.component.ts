@@ -15,8 +15,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.dashboardService.getMoviesDashboard().subscribe(data =>{
-      this.moviesDashboard = data;
+      this.moviesDashboard = Object.values(data);
     })
   }
-
 }
