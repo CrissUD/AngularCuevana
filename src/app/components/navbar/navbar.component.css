@@ -86,7 +86,7 @@ li a:hover{
 .sub-menu{
     position: absolute;
     display: none;
-    margin-top: 250px;
+    margin-top: 450px;
     margin-left: 20px;
     background:#1E2747;
     border-radius: 12px;
@@ -120,7 +120,7 @@ li a:hover{
     margin-left: 0px;
 }
 .sub-menu-2{
-    margin-top: 130px;
+    margin-top: 230px;
 }
 .genders:hover .sub-menu-1{
     display: flex;
