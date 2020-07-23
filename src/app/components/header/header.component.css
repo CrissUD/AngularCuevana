@@ -132,3 +132,9 @@ header{
         padding-right: 20px;
     }
 }
+
+@media(max-width:380px){
+    .div-title a{
+        display: none;
+    }
+}
