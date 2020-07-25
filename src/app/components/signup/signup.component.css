@@ -15,7 +15,7 @@
     display: block;
     background: #fff;
     width: 500px;
-    height: 90%;
+    height: 80%;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -137,6 +137,11 @@ a:hover{
     justify-content: center;
 }
 
+@media(max-width:1024px){
+    .signup-form{
+        height: 90%;
+    }
+}
 @media(max-width:480px){
     .signup-form{
         width: 320px;
