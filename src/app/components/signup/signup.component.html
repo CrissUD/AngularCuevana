@@ -15,29 +15,29 @@
                     class="text-in"
                     type="text" 
                     placeholder="NombreUsuario"
-                    name="usuario"
-                    formControlName="usuario"
-                    [class.is-invalid]="validacionUsuario"
+                    name="user"
+                    formControlName="user"
+                    [class.is-invalid]="validationUser"
                 >
-                <span *ngIf="validacionUsuario">Escriba el Nombre de Usuario</span>
+                <span *ngIf="validationUser">Escriba el Nombre de Usuario</span>
                 <input 
                     class="text-in"
                     type="email" 
                     placeholder="CorreoElectronico"
-                    name="correo"
-                    formControlName="correo"
-                    [class.is-invalid]="validacionCorreo"
+                    name="email"
+                    formControlName="email"
+                    [class.is-invalid]="validationEmail"
                 >
-                <span *ngIf="validacionCorreo">No tiene formato de correo</span>
+                <span *ngIf="validationEmail">No tiene formato de correo</span>
                 <input 
                     class="text-in"
                     type="password" 
                     placeholder="ContraseñaUsuario"
-                    name="clave"
-                    formControlName="clave"
-                    [class.is-invalid]="validacionClave"
+                    name="key"
+                    formControlName="key"
+                    [class.is-invalid]="validationKey"
                 >
-                <span *ngIf="validacionClave">La contraseña debe tener mínimo 8 caracteres</span>
+                <span *ngIf="validationKey">La contraseña debe tener mínimo 8 caracteres</span>
                 <div class="check">
                     <label>
                         <input class="check-in" type="checkbox" name="check">

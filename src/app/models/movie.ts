@@ -1,4 +1,5 @@
 export interface movie{
+    id_movie: string;
     title: string;
     kind?: string;
     punctuation: string;

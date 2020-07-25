@@ -1,6 +1,5 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormArray} from '@angular/forms';
-import { UsuariosService } from 'src/app/services/usuarios.service';
 
 @Component({
   selector: 'app-login',
@@ -13,14 +12,12 @@ export class LoginComponent implements OnInit {
   estado = new EventEmitter<boolean>();
 
   form: FormGroup;
-  constructor(private usuariosService: UsuariosService, private fb: FormBuilder) {
+  constructor(private fb: FormBuilder) {
     this.crearFormulario();
   }
 
   ngOnInit(): void {
-    this.usuariosService.getUsers().subscribe(data =>{
-      // console.log(data)
-    });
+
   }
 
   crearFormulario(){
