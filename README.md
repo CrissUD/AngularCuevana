@@ -24,7 +24,7 @@ Alguna de las características usadas para la construcción de esta página Web 
 
 # Resultado
 
-A continuación se muestra el resultado de la replica del HomePage de Cuevana3, si quiere ver la pagina por usted mismo puede entrar al [siguiente link](https://crissud.github.io/AngularCuevana/home).
+A continuación se muestra el resultado de la replica del HomePage de Cuevana3, si quiere ver la pagina por usted mismo puede entrar al [siguiente link](https://crissud.github.io/AngularCuevana/).
 
 <div align='center'>
     <img  src='https://i.imgur.com/qKW6ij2.png'>
