@@ -59,7 +59,7 @@ export class SignupComponent implements OnInit {
       this.user.email = this.form.value.email;
       this.user.key = this.form.value.key;
       let petition: Observable<any>;
-      petition = this.usersService.postUser(this.user);
+      // petition = this.usersService.postUser(this.user);
       petition.subscribe(res =>{
         swal.fire({
           title: `Éxito al guardar a ${res.name}`,
